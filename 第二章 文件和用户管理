@@ -1,0 +1,47 @@
+根/————一级目录:bin(二进制、改密码)、boot(启动工具)、dev(驱动、设备，硬件)、etc(配置文件，控制台文件)、home、root(只有超级管理员能进)、run(运行文件)
+               sbin(类似与bin)、temp(临时目录)、usr、var
+ls：看主目录里有什么
+ls -l：看主目录里有什么并显示详细信息(长格式的形式)。如果显示 - 表示普通文件，d开头的表示文件夹......
+cd:(change directory)
+比如先cd一个目录，在输入ls可以得到这个目录里有啥文件夹
+pwd:打印当前路径
+ls /:显示根目录下的内容
+ls -l /:长格式显示根下的详细内容
+touch:创建文件。 touch /var1：在根目录里创建var1文件
+ctrl + l:将命令行清屏
+
+在mnt里面创建mnt文件夹（绝对路径方法）
+[root@localhost /]# cd /mnt
+[root@localhost mnt]# touch /mnt/mnt1
+[root@localhost mnt]# ls
+mnt1
+
+mkdir:创建目录
+mkdir -p:连续创建文件夹 a/b/c(当创建目录没有上一级时，自动创建)
+cp:把源文件复制到目标文件夹
+cp -r:复制文件夹
+
+创建a1文件夹，再在a1下创b1文件夹，在b1下创建c1文件夹，在c1下创建d1文件
+[root@localhost ~]# mkdir /home/a1
+[root@localhost ~]# mkdir -p /home/a1/b1/c1
+[root@localhost ~]# touch /home/a1/b1/c1/d1
+
+将d1这个文件复制到a1下面，并检测是否成功
+[root@localhost ~]# cp /home/a1/b1/c1/d1 /home/a1
+[root@localhost ~]# ls /home/a1
+b1  d1
+
+分别是复制文件和文件夹到桌面
+[root@localhost ~]# cp /home/a1/b1/c1/d1 /root/桌面/
+[root@localhost ~]# cp -r /home/a1 /root/桌面/
+
+
+
+
+
+
+
+
+
+
+
