@@ -35,9 +35,40 @@ b1  d1
 [root@localhost ~]# cp /home/a1/b1/c1/d1 /root/桌面/
 [root@localhost ~]# cp -r /home/a1 /root/桌面/
 
+mv:挪文件 mv 源文件路径 目标文件路径
+mv也可用来改名，稍后介绍
+mv /home/a1/b1/c1/d1 /home/a1/b1
 
+四个光标箭头可以上下翻阅在linux系统上输入的命令
 
+ctrl shift + :放大字体
+ctrl - :缩小字体
 
+rm -rf：删除
+[root@localhost ~]# rm -rf /home/a1/b1/c1
+[root@localhost ~]# rm -rf /home/a1/b1
+[root@localhost ~]# rm -rf /home/a1/d1
+[root@localhost ~]# rm -rf /home/a1
+都删没了，新建一个文件夹试着删除
+[root@localhost ~]# mkdir -p /home/a1/b1
+[root@localhost ~]# touch /home/a1/d1
+[root@localhost ~]# touch /home/a1/d2
+
+d*代表d开头的都删掉
+[root@localhost ~]# rm -rf /home/a1/d*
+[root@localhost ~]# rm -rf /home/a1/*
+[root@localhost ~]# touch /home/a1/b1
+[root@localhost ~]# touch /home/a1/b2
+[root@localhost ~]# touch /home/a1/c1
+[root@localhost ~]# touch /home/a1/c2
+*1表示1结尾的文件都删掉
+[root@localhost ~]# rm -rf /home/a1/*1
+
+cat:查看文件
+head -n:查看文件的前n行
+tail -n:查看文件的后n行
+more:就是不显示文档中的全部内容，more(45%)
+grep:查询文档中的关键字的
 
 
 
