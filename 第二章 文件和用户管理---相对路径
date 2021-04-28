@@ -1,0 +1,22 @@
+相对路径
+.表示当前目录 ./
+..表示当前目录的上一级 ../
+什么都不打也可以表示当前目录
+[root@localhost eee]# touch ./file1.txt
+[root@localhost eee]# ls /aaa/bbb/ccc/ddd/eee
+fff  file1.txt
+
+../的使用
+[root@localhost ccc]# touch ../b1.txt
+[root@localhost ccc]# touch ../b2.txt
+[root@localhost ccc]# touch ../b3.txt
+[root@localhost ccc]# ls /aaa/bbb
+b1.txt  b2.txt  b3.txt  ccc
+[root@localhost ccc]# 
+
+在ccc的前三级目录里放东西
+[root@localhost ccc]# touch ../../../m.txt
+[root@localhost ccc]# ls /
+aaa  boot  etc   lib    media  m.txt  proc  run   srv  tmp  var
+bin  dev   home  lib64  mnt    opt    root  sbin  sys  usr  var1
+
