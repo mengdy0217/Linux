@@ -70,6 +70,58 @@ tail -n:查看文件的后n行
 more:就是不显示文档中的全部内容，more(45%)
 grep:查询文档中的关键字的
 
+文件重定向：
+>:把前面输出的内容存到后面的文件当中
+gedit:记事本
+
+[root@localhost ~]# ls / > /1.txt
+[root@localhost ~]# cat /1.txt
+1.txt得到了内容
+1.txt
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+var1
+打开1.txt这个文件
+[root@localhost ~]# gedit /1.txt
+
+vim:打开记事本写东西（可以是已经存在的文件，也可以是新建立的文件）
+写东西要摁i，退出写东西摁esc，之后:wq，可以继续[root@localhost ~]#
+yy:复制，3yy:复制三行，p粘贴，dd删除，5dd就是删五行，删多了的时候按u撤销
+v:可以可视化，摁光标就类似于鼠标选择
+o:开始写字，但是新开一行
+hjkl:上下左右
+0 $:分别定位到行首 行尾
+gg G:分别定位到页首、页尾
+
+set nu:设置行号
+set nonu:取消行号
+set list:显示控制字符
+
+/想找的字符串 就可以显示位置
+w:保存
+q:退出
+q!:不保存退出
+查找替换：范围 s/原内容/新内容/全局  
+eg:在1-5行里将222的行替换为666  1,5 s/222/666/g
+w:另存为.....
+
 
 
 
