@@ -20,3 +20,19 @@ b1.txt  b2.txt  b3.txt  ccc
 aaa  boot  etc   lib    media  m.txt  proc  run   srv  tmp  var
 bin  dev   home  lib64  mnt    opt    root  sbin  sys  usr  var1
 
+mkdir -pv：可以嵌套地创建文件
+[root@localhost home]# mkdir -pv /home/{qianfeng/{dir1,111},nizhan}
+mkdir: 已创建目录 "/home/qianfeng"
+mkdir: 已创建目录 "/home/qianfeng/dir1"
+mkdir: 已创建目录 "/home/qianfeng/111"
+[root@localhost home]# ls
+a1  dir1  dir2  file5.txt  file6.txt  mengdy  nizhan  qianfeng
+[root@localhost home]# ls ./qianfeng
+111  dir1
+
+
+文件
+vim /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+用户名：x:uid(用户的身份证号):gid（group组号）:描述:HOME:shell
+
